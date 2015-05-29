@@ -1,0 +1,63 @@
+body {
+  height: 100vh;
+  background: url("../images/waldo.jpg") no-repeat;
+  background-size: cover;
+}
+
+.container .column {
+  height: 100vh;
+  background: rgba(255, 255, 255, .9);
+}
+
+.page-header {
+  padding-top: 40px;
+  margin-top: 0px;
+}
+
+#result-wrapper hr {
+  margin-top: 40px;
+}
+
+.page-header, hr {
+  border-color: orange;
+}
+
+#result-wrapper {
+  display: none;
+  margin-top: 40px;
+}
+
+#result-wrapper p {
+  font-size: 2em;
+}
+
+.page-header {
+  margin-bottom: 50px;
+}
+
+#new-phrase {
+  font-size: 23px;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    padding-top: 0px;
+    margin-top: 40px;
+  }
+
+  .container .column {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .9);
+    border: 1px solid orange;
+  }
+
+  .container .column {
+    height: initial;
+  }
+
+  #result-wrapper p {
+    font-size: initial;
+  }
+}
