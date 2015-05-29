@@ -1,4 +1,5 @@
-describe("findAndReplace(targetPhrase, wordToReplace, replacementWord)", function() {
+// findAndReplace(targetPhrase, wordToReplace, replacementWord)
+describe("findAndReplace", function() {
   it("replaces a single word in a single-word phrase", function() {
     expect(findAndReplace("kitten", "kitten", "puppy")).to.equal("puppy");
   });
@@ -22,5 +23,11 @@ describe("findAndReplace(targetPhrase, wordToReplace, replacementWord)", functio
 
   it("when the first word of a sentence is not capitalized, the returned phrase is not capitalized", function() {
     expect(findAndReplace("kittens, kittens everywhere!", "kittens", "puppies")).to.equal("puppies, puppies everywhere!");
+  });
+});
+
+describe("capitalize", function() {
+  it("capitalizes the first character of a string", function() {
+    expect(capitalize('kittens are the best')).to.equal("Kittens are the best");
   });
 });
