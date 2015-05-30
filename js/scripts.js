@@ -5,7 +5,7 @@ var findAndReplace = function(targetPhrase, wordToReplace, replacementWord) {
   var phraseFirstChar = targetPhrase.charAt(0);
 
   // Capitalize replacement phrase if original phrase was capitalized
-  if (phraseFirstChar == phraseFirstChar.toUpperCase()) {
+  if (phraseFirstChar === phraseFirstChar.toUpperCase()) {
     return capitalize(replacementPhrase);
   } else {
     return replacementPhrase;
